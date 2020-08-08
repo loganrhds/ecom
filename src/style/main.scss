@@ -10,7 +10,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "montserrat";
 }
 
 body {
@@ -25,3 +24,4 @@ body {
 
 @import "page-title";
 @import "form-fields";
+@import "details";
