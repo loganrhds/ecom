@@ -13,24 +13,15 @@ html {
   font-family: "montserrat";
 }
 
-// body {
-//     overflow-x: hidden;
-//     font-weight: normal;
-
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//     text-rendering: optimizeLegibility;
-//     -webkit-tap-highlight-color: transparent;
-// }
-
-// .app {
-//     margin-top: 2rem;
-//     display: grid;
-//     justify-items: center;
-// }
+body {
+  font-family: "Open Sans";
+  color: #808080;
+}
 
 @import "layout";
 @import "headernavbar";
-@import "page-title.scss";
-@import "auth/signin.scss";
-@import "auth/signup.scss";
+@import "auth/signin";
+@import "auth/signup";
+
+@import "page-title";
+@import "form-fields";
