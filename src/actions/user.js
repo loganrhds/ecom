@@ -12,7 +12,7 @@ export function fetchUserPurchases() {
     type: SET_USER_PURCHASES,
     payload: [
       {
-        _id: 0,
+        _id: 10,
         total: 1.02,
         orderNumber: "A001",
         orderDate: new Date().toDateString(),
