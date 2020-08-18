@@ -19,13 +19,18 @@ body {
 
 @import "layout";
 @import "headernavbar";
-@import "auth/signin";
-@import "auth/signup";
-
 @import "page-title";
 @import "form-fields";
 @import "details";
 
+// AUTH
+@import "auth/signin";
+@import "auth/signup";
+
+// ACCOUNT
 @import "account/account-information.scss";
 @import "account/purchase-history.scss";
 @import "account/account.scss";
+
+// SHOP
+@import "shop/shop.scss";
