@@ -34,7 +34,6 @@ class AccountInformationForm extends Component {
           name="email"
           component={FormInput}
         />
-
         <Field
           className="account-information-form__street-address"
           type="address"
@@ -67,7 +66,6 @@ class AccountInformationForm extends Component {
           name="zipcode"
           component={FormInput}
         />
-
         {this.state.showPasswords ? (
           [
             <Field
@@ -97,6 +95,25 @@ class AccountInformationForm extends Component {
               name="Confirm"
               component={FormInput}
             />,
+            <Field
+              key={3}
+              className="account-information-form__update-information"
+              onClick={() => this.setState({ showPasswords: false })}
+              type="submit"
+              title="Update Information"
+              name="update-information"
+              component={FormButton}
+            />,
+            <Field
+              key={4}
+              className="account-information-form__cancel"
+              onClick={() => this.setState({ showPasswords: false })}
+              type="button"
+              title="Cancel"
+              name="cancel"
+              short={true}
+              component={FormButton}
+            />,
           ]
         ) : (
           <Field
@@ -109,6 +126,7 @@ class AccountInformationForm extends Component {
             component={LongGreyButton}
           />
         )}
+        <div className="account-information-form__line"></div>
       </form>
     );
   }
