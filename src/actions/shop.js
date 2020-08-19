@@ -1,7 +1,4 @@
-import {
-  // SET_SHOP_CATEGORIES
-  SET_NAVBAR_LINKS,
-} from "./types";
+import { SET_NAVBAR_LINKS, SET_SHOP_PRODUCTS } from "./types";
 
 export function fetchShopCategories() {
   return {
@@ -34,6 +31,70 @@ export function fetchShopCategories() {
       {
         _id: 6,
         title: "Ruby",
+      },
+    ],
+  };
+}
+
+export function fetchShopProducts() {
+  return {
+    type: SET_SHOP_PRODUCTS,
+    payload: [
+      {
+        _id: 0,
+        title: "JavaScript in the Browser",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 1],
+      },
+      {
+        _id: 1,
+        title: "Graph Database",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 6],
+      },
+      {
+        _id: 2,
+        title: "Full Stack Development",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 1, 4],
+      },
+      {
+        _id: 3,
+        title: "User Interface Design",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 2],
+      },
+      {
+        _id: 4,
+        title: "JavaScript Developement",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 1],
+      },
+      {
+        _id: 5,
+        title: "User Experience Design",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 2],
+      },
+      {
+        _id: 6,
+        title: "Advanced OOP",
+        descriptiom:
+          "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues",
+        price: 1.99,
+        belongsTo: [0, 6],
       },
     ],
   };
